@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="loyalty_program_sale_order_form_inherit" model="ir.ui.view">
+            <field name="name">loyalty_program_sale_order.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date_order']" position="after">
+                    <field name="loyalty_program_id"/>
+                    <field name="point_accum"/>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="sale_order_view_form_fid_inherit" model="ir.ui.view">
+            <field name="name">button loyalty</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale_coupon.sale_order_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//button[@name='recompute_coupon_lines']" position="before">
+                    <button name="recompute_Loyalty_lines" class="btn btn-secondary" string="Loyalty"
+                            type="object" states="draft,sent,sale"/>
+
+                </xpath>
+            </field>
+        </record>
+
+        <record id="res_config_settings_loyalty_sale_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="8"/>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='show_margins']" position="after">
+                <div class="col-12 col-lg-6 o_setting_box"
+                     id="show_loyalty_program">
+                    <div class="o_setting_left_pane">
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="loyalty_for_sale_id"/>
+                        <div class="text-muted">
+                            Let your customers log in to see their documents
+                        </div>
+                        <div class="mt8">
+                            <field name="loyalty_for_sale_id" class="o_light_label"/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+    </data>
+</odoo>

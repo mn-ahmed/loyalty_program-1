@@ -1,0 +1,364 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* loyalty_program
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-19 09:40+0000\n"
+"PO-Revision-Date: 2022-04-19 09:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: loyalty_program
+#: model:mail.template,body_html:loyalty_program.email_template_id_goes_here
+msgid ""
+"\n"
+"                    <p><strong>Department: --department--</strong></p>\n"
+"                    <p>Dear Sir,</p>-->\n"
+"                        <p>Your loyalty points are:</p>
+"                        <field name=\"loyalty_points\"/>\n"
+"                        <p>${object.money_spent}</p>\n"
+"                        <p>This is automated mail, don't reply.</p>\n"
+"                    <p>Regards,</p>\n"
+"                    <p>Department</p>\n"
+"                    \n"
+"        "
+msgstr ""
+"\n"
+"                    <p><strong>Department: --department--</strong></p>\n"
+"                    <p>Cher client,</p>-->\n"
+"                        <p>Vos points de fidélité sont:</p>
+"                        <field name=\"loyalty_points\"/>\n"
+"                        <p>${object.money_spent}</p>\n"
+"                        <p>This is automated mail, don't reply.</p>\n"
+"                    <p>Regards,</p>\n"
+"                    <p>Department</p>\n"
+"                    \n"
+"        "
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__points
+msgid "% of points per order"
+msgstr "% de points par commande"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__loyalty_point
+#: model:ir.model.fields,field_description:loyalty_program.field_res_partner__loyalty_point
+#: model:ir.model.fields,field_description:loyalty_program.field_res_users__loyalty_point
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__loyalty_point
+msgid "Accumulated points"
+msgstr "Points cumulés"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__active
+msgid "Active"
+msgstr "Active"
+
+#. module: loyalty_program
+#: model_terms:ir.ui.view,arch_db:loyalty_program.view_action_loyalty_point
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: loyalty_program
+#: model:ir.model,name:loyalty_program.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de config"
+
+#. module: loyalty_program
+#: model:ir.model,name:loyalty_program.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__create_uid
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__create_uid
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program_partner_level__create_uid
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__create_date
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__create_date
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program_partner_level__create_date
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__partner_name
+#: model:ir.ui.menu,name:loyalty_program.customer_menu
+#: model_terms:ir.ui.view,arch_db:loyalty_program.loyalty_history_search_view
+msgid "Customer"
+msgstr "Contact"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_res_partner__loyalty_level
+#: model:ir.model.fields,field_description:loyalty_program.field_res_users__loyalty_level
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__loyalty_level
+msgid "Customer level"
+msgstr "Niveau client"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__partner_id
+msgid "Customer name"
+msgstr "Nom client"
+
+#. module: loyalty_program
+#: model:ir.model,name:loyalty_program.model_loyalty_history
+#: model:ir.model,name:loyalty_program.model_loyalty_program_partner_level
+msgid "Description"
+msgstr "Description"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__display_name
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__display_name
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program_partner_level__display_name
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__display_name
+msgid "Display Name"
+msgstr "Afficher Nom"
+
+#. module: loyalty_program
+#: model_terms:ir.ui.view,arch_db:loyalty_program.res_config_settings_view_form
+msgid "Email"
+msgstr "Email"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_res_config_settings__loyalty_email_notify
+msgid "Email Notify"
+msgstr "Notification par Email"
+
+#. module: loyalty_program
+#: model:ir.model.fields.selection,name:loyalty_program.selection__loyalty_program__type__fix
+msgid "Fix"
+msgstr "Fixé"
+
+#. module: loyalty_program
+#: model_terms:ir.ui.view,arch_db:loyalty_program.loyalty_history_search_view
+msgid "Group By"
+msgstr "Regrouper par"
+
+#. module: loyalty_program
+#: model:mail.template,name:loyalty_program.email_template_id_goes_here
+#: model:mail.template,subject:loyalty_program.email_template_id_goes_here
+msgid "Happy More Point"
+msgstr "Plus de point sur votre compte fidélité"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__id
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__id
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program_partner_level__id
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__id
+msgid "ID"
+msgstr "ID"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history____last_update
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program____last_update
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program_partner_level____last_update
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__write_uid
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__write_uid
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program_partner_level__write_uid
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__write_date
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__write_date
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program_partner_level__write_date
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: loyalty_program
+#: model_terms:ir.ui.view,arch_db:loyalty_program.res_config_settings_loyalty_sale_view_form
+msgid "Let your customers log in to see their documents"
+msgstr "Permettre à vos clients de se connecter pour consulter leurs documents"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program_partner_level__description
+msgid "Level Description"
+msgstr "Description du niveau"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program_partner_level__name
+msgid "Level Name"
+msgstr "Nom du niveau"
+
+#. module: loyalty_program
+#: model:ir.ui.menu,name:loyalty_program.loyalty_program_menu
+#: model_terms:ir.ui.view,arch_db:loyalty_program.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:loyalty_program.sale_order_view_form_fid_inherit
+msgid "Loyalty"
+msgstr "Fidélité"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_res_config_settings__loyalty_for_sale_id
+msgid "Loyalty For Sale"
+msgstr "Fidélité pour module vente"
+
+#. module: loyalty_program
+#: model:ir.actions.act_window,name:loyalty_program.loyalty_history_act_window
+#: model:ir.ui.menu,name:loyalty_program.loyalty_history_menu
+#: model_terms:ir.ui.view,arch_db:loyalty_program.loyalty_history_tree_view
+msgid "Loyalty History"
+msgstr "Historique de fidélité"
+
+#. module: loyalty_program
+#: model:ir.actions.act_window,name:loyalty_program.loyalty_program_act_window
+msgid "Loyalty Program"
+msgstr "Programme Fidélité"
+
+#. module: loyalty_program
+#: model_terms:ir.ui.view,arch_db:loyalty_program.loyalty_program_form_view
+#: model_terms:ir.ui.view,arch_db:loyalty_program.loyalty_program_tree_view
+msgid "Loyalty Programs"
+msgstr "Programmes Fidélité"
+
+#. module: loyalty_program
+#: model:ir.model,name:loyalty_program.model_loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_sale_order__loyalty_program_id
+msgid "Loyalty program"
+msgstr "Programme Fidélité"
+
+#. module: loyalty_program
+#: model_terms:ir.ui.view,arch_db:loyalty_program.loyalty_history_search_view
+msgid "ModelTitle"
+msgstr ""
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__name
+msgid "Name of the loyalty"
+msgstr "Nom de Programme Fidélité"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__order_id
+msgid "Order"
+msgstr "Commander"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__date_order
+msgid "Order confirmation date"
+msgstr "Date confirmation commande"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__name
+msgid "Order number"
+msgstr "Nombre de commande"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__partner_id
+msgid "Partner"
+msgstr "Contact"
+
+#. module: loyalty_program
+#: model_terms:ir.ui.view,arch_db:loyalty_program.loyalty_program_partner_level_form_view
+msgid "Partner Level"
+msgstr "Niveau contact"
+
+#. module: loyalty_program
+#: model:ir.actions.act_window,name:loyalty_program.loyalty_program_partner_level_act_window
+#: model:ir.ui.menu,name:loyalty_program.loyalty_program_partner_level_menu
+#: model_terms:ir.ui.view,arch_db:loyalty_program.loyalty_program_partner_level_tree_view
+msgid "Partner Levels"
+msgstr "Niveaux contact"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_sale_order__point_accum
+msgid "Points obtained"
+msgstr "Points obtenus"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_wizard_loyalty_point__points_to_use
+msgid "Points to use"
+msgstr "Points à utiliser"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program_partner_level__loyalty_points
+msgid "Required point"
+msgstr "Points requis"
+
+#. module: loyalty_program
+#: model:ir.model,name:loyalty_program.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: loyalty_program
+#: model:ir.actions.act_window,name:loyalty_program.action_loyalty_config_settings
+#: model:ir.ui.menu,name:loyalty_program.menu_sale_general_settings
+msgid "Settings"
+msgstr "Configuration"
+
+#. module: loyalty_program
+#: model_terms:ir.actions.act_window,help:loyalty_program.loyalty_program_partner_level_act_window
+msgid "There is no examples click here to add new ModelTitle."
+msgstr ""
+
+#. module: loyalty_program
+#: model_terms:ir.actions.act_window,help:loyalty_program.loyalty_history_act_window
+msgid "There is no history."
+msgstr "Il n'y a pas d'historique"
+
+#. module: loyalty_program
+#: model_terms:ir.ui.view,arch_db:loyalty_program.loyalty_program_form_view
+#: model_terms:ir.ui.view,arch_db:loyalty_program.loyalty_program_partner_level_form_view
+msgid "Title"
+msgstr "Titre"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__money_spent
+msgid "Total amount"
+msgstr "Montant total"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_history__loyalty_points
+msgid "Total points"
+msgstr "Total des points"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__type
+msgid "Type"
+msgstr "Type"
+
+#. module: loyalty_program
+#: model:product.product,uom_name:loyalty_program.loyalty_product
+#: model:product.template,uom_name:loyalty_program.loyalty_product_product_template
+msgid "Units"
+msgstr "Unités"
+
+#. module: loyalty_program
+#: model_terms:ir.ui.view,arch_db:loyalty_program.view_action_loyalty_point
+msgid "Use All points"
+msgstr "Utiliser tous les points"
+
+#. module: loyalty_program
+#: model_terms:ir.ui.view,arch_db:loyalty_program.view_action_loyalty_point
+msgid "Use loyalty points"
+msgstr "Confirmer points de fidélité"
+
+#. module: loyalty_program
+#: model:ir.model.fields.selection,name:loyalty_program.selection__loyalty_program__type__var
+msgid "Variant"
+msgstr "Variante"
+
+#. module: loyalty_program
+#: model:ir.model,name:loyalty_program.model_wizard_loyalty_point
+msgid "Wizard loyalty point"
+msgstr "Point de fidélité"
+
+#. module: loyalty_program
+#: model:ir.model.fields,field_description:loyalty_program.field_loyalty_program__points_fix
+msgid "Points per order"
+msgstr "Points par commande"

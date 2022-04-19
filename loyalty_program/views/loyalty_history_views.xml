@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="loyalty_history_tree_view" model="ir.ui.view">
+            <field name="name">loyalty.history.tree</field>
+            <field name="model">loyalty.history</field>
+            <field name="arch" type="xml">
+                <tree string="Loyalty History" create="false">
+                    <field name="partner_id"/>
+                    <field name="loyalty_points"/>
+                    <field name="money_spent"/>
+                    <field name="date_order"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="loyalty_history_search_view" model="ir.ui.view">
+            <field name="name">ProjectName.ModelName.search</field>
+            <field name="model">loyalty.history</field>
+            <field name="arch" type="xml">
+                <search string="ModelTitle">
+                    <group expand="1" string="Group By">
+                        <filter string="Customer" name="customer" domain="[]"
+                                context="{'group_by':'partner_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="loyalty_history_act_window" model="ir.actions.act_window">
+            <field name="name">Loyalty History</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">loyalty.history</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    There is no history.
+                </p>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

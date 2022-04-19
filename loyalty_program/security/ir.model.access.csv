@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_loyalty_program,loyalty_program.loyalty_program,model_loyalty_program,base.group_user,1,1,1,1
+access_loyalty_history,loyalty_program.loyalty_history,model_loyalty_history,base.group_user,1,1,1,1
+access_loyalty_program_partner_level,loyalty_program.loyalty_program_partner_level,model_loyalty_program_partner_level,base.group_user,1,1,1,1
+access_res_config_settings,loyalty_program.res_config_settings,model_res_config_settings,base.group_user,1,1,1,1
+wizard_loyalty_point,loyalty_program.wizard_loyalty_point,model_wizard_loyalty_point,base.group_user,1,1,1,1

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_action_loyalty_point" model="ir.ui.view">
+        <field name="name">wizard loyalty point</field>
+        <field name="model">wizard.loyalty.point</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="partner_name"/>
+                            <field name="loyalty_point"/>
+                            <field name="loyalty_level"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="points_to_use"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button  name="use_all_points" type="object" string="Use All points" class="btn-primary"/>
+                        <button  name="use_loyalty_points" type="object" string="Use loyalty points" class="btn-primary"/>
+                        <button string="Cancel" special="cancel" class="oe_highlight"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

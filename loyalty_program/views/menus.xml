@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem name="Loyalty" id="loyalty_program_menu" action="loyalty_program_act_window"
+        web_icon="loyalty_program,static/description/icon.png"/>
+        <menuitem name="Customer" id="customer_menu" parent="loyalty_program_menu" action="base.action_partner_form"/>
+        <menuitem name="Loyalty History" id="loyalty_history_menu" parent="loyalty_program_menu"
+                  action="loyalty_history_act_window"/>
+        <menuitem name="Partner Levels" id="loyalty_program_partner_level_menu" parent="loyalty_program_menu"
+                  action="loyalty_program_partner_level_act_window"/>
+
+        <menuitem id="menu_sale_general_settings" name="Settings" parent="loyalty_program_menu"
+                  action="action_loyalty_config_settings"/>
+    </data>
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="loyalty_level0" model="loyalty.program.partner.level">
+            <field name="name">Level 0</field>
+            <field name="loyalty_points">0.0</field>
+            <field name="description">First level</field>
+        </record>
+    </data>
+</odoo>

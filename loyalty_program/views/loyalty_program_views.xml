@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="loyalty_program_form_view" model="ir.ui.view">
+            <field name="name">loyalty_program.form</field>
+            <field name="model">loyalty.program</field>
+            <field name="arch" type="xml">
+                <form string="Loyalty Programs">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="Title"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="type" widget="radio"
+                                    class="oe_edit_only"
+                                    options="{'horizontal': true}"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="points_fix" attrs="{'invisible': [('type', '=', 'var')]}"/>
+                                <field name="points" attrs="{'invisible': [('type', '=', 'fix')]}"/>
+                            </group>
+                            <group>
+                                <field name="active"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="loyalty_program_tree_view" model="ir.ui.view">
+            <field name="name">loyalty_program.tree</field>
+            <field name="model">loyalty.program</field>
+            <field name="arch" type="xml">
+                <tree string="Loyalty Programs">
+                    <field name="name"/>
+                    <field name="points"/>
+                </tree>
+            </field>
+        </record>
+
+<!--        <record id="loyalty_program_search_view" model="ir.ui.view">-->
+<!--            <field name="name">loyalty_program.search</field>-->
+<!--            <field name="model">loyalty.program</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <search string="ModelTitle">-->
+<!--                    <group expand="1" string="Group By">-->
+<!--                        <filter string="Example Field" name="example_field" domain="[]"-->
+<!--                                context="{'group_by':'points'}"/>-->
+<!--                    </group>-->
+<!--                </search>-->
+<!--            </field>-->
+<!--        </record>-->
+
+        <record id="loyalty_program_act_window" model="ir.actions.act_window">
+            <field name="name">Loyalty Program</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">loyalty.program</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+    </data>
+</odoo>
